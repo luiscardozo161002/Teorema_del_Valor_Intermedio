@@ -19,7 +19,7 @@ plot(x,f(x),'r','LineWidth',2)
 valor_de_Integral=quad(f,-2,3)
 
 %Determina el valor del punto c
-Valor_Medio=strcat('3*x-2==',num2str(1/7*valor_de_Integral))
+Valor_Medio=strcat('3*x-2==',num2str(1/3*valor_de_Integral))
 
 %Interpretación geométrica
 hold on
