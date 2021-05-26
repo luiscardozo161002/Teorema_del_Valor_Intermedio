@@ -4,7 +4,7 @@
 % Author		:Luis Gerardo Cardozo Carranza (Gerard_CRS) luiscardozo161002@gmail.com
 % Date			:20210525
 % sion		        :1
-% Usage			:octave> /path/Teorema_del_Valor_Intermedio_Actividad_1.9_Luis Gerardo Cardozo Carranza_3202
+% Usage			:octave> /path/Teorema_del_Valor_Intermedio_Actividad_1.8_Luis Gerardo Cardozo Carranza_3202
 % Notes			:Requiere aplicacion octave usar en consola preferentemente.
 
 %limpia la pantalla y las variables.
