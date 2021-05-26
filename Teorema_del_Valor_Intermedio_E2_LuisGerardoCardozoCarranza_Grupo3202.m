@@ -1,6 +1,6 @@
 % Octave Script
 % Title			:1.8 Teorema del Valor Intermedio
-% Description		:Script para graficar el ejericio 1 de la actividad 1.8
+% Description		:Script para graficar el ejericio 2 de la actividad 1.8
 % Author		:Luis Gerardo Cardozo Carranza (Gerard_CRS) luiscardozo161002@gmail.com
 % Date			:20210525
 % sion		        :1
@@ -16,10 +16,10 @@ f=inline('x.^2-3*x-2');
 plot(x,f(x),'r','LineWidth',2)
 
 %Para calcular la integral
-valor_de_Integral=quad(f,-2,3)
+valor_de_Integral=quad(f,1,4)
 
 %Determina el valor del punto c
-Valor_Medio=strcat('x.^2-3*x-2==',num2str(1/7*valor_de_Integral))
+Valor_Medio=strcat('x.^2-3*x-2==',num2str(1/3*valor_de_Integral))
 
 %Interpretación geométrica
 hold on
