@@ -1,6 +1,6 @@
 % Octave Script
 % Title			:1.8 Teorema del Valor Intermedio
-% Description		:Script para graficar el ejericio 1 de la actividad 1.8
+% Description		:Script para graficar el ejericio 3 de la actividad 1.8
 % Author		:Luis Gerardo Cardozo Carranza (Gerard_CRS) luiscardozo161002@gmail.com
 % Date			:20210525
 % sion		        :1
