@@ -10,20 +10,61 @@
 %limpia la pantalla y las variables.
 clc, clear  
 
-%Definimos la funcion
-x=-2:.05:0;
-f=inline('3*x-2');
-plot(x,f(x),'r','LineWidth',2)
+%Carga de la paqueteria Symbolic
+pkg load symbolic
 
-%Para calcular la integral
-valor_de_Integral=quad(f,-2,0)
+%El comando sym nos permite crear y dar un valor inicial a una variable simbólica x.
+syms f(x)
 
-%Determina el valor del punto c
-Valor_Medio=strcat('3*x.^3-2*x^2==',num2str(1/3*valor_de_Integral))
+%La derivada se realizara respecto a la variable simbolica por defecto (x). 
+f(x) = (3*x.^3-2*x.^2);
+%Devuelve la derivada de la funcion ingresada
+Df = diff(f,x)
 
-%Interpretación geométrica
+%Proceso de operacion del T.V.M.
+%T.V.IM. f´(c)=f(b)-f(a)/b-a.
+%El comando fix reduce los decimales.
+ValorIntMed=fix(sqrt(2))
+ans = (sym)
+
+%Define los intervalos y el numero de rectangulos.
+a =  -2;
+b =   0;
+n = 100;
+
+%Determina la longitud de la base de x.
+base = (b-a)/n;
+
+%Definicion de la funcion.
+x =a:base:(b-base);
+
+%Representa la altura
+altura=(9*x.^2-4);
+
+%Calcula el valor de cada uno de los rectangulos.
+area = base*altura;
+
+%Establece    la    linea   que   forma  la funcion
+x2 = linspace(-2,0,100);
+y2 =(9*x.^2-4);
+
+%Inicio del  intervalo, fin del intervalo, numero de rectangulos.
+xa = linspace(-2,0,100);
+yab =(9*x.^2-4);
+
+%Dibuja una  grafica de barras sin espacios
+g = bar(xa,yab,'histc');
+
+%Permite continuar  graficando
 hold on
-area(x,f(x))
-altura=f(c(1));
-plot([-2 0],[altura altura])
-hold off
+
+%Grafica la funcion
+plot(x2,y2);
+
+%Asigna un nombre a la grafica 
+title("Ejericicio 4: (3x^2-2x^2),[-2,0],C=1");
+
+%ajusta la grafica a los datos.
+axis tight
+
+
