@@ -37,7 +37,7 @@ base = (b-a)/n;
 %Definicion de la funcion.
 x =a:base:(b-base);
 
-%Representa la altura---"x=1 al graficar"
+%Representa la altura
 altura=(3*x-2);
 
 %Calcula el valor de cada uno de los rectangulos.
