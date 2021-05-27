@@ -1,3 +1,12 @@
+% Octave Script
+% Title			:1.8 Teorema del Valor Intermedio
+% Description		:Script para graficar el ejericio 1 de la actividad 1.8
+% Author		:Luis Gerardo Cardozo Carranza (Gerard_CRS) luiscardozo161002@gmail.com
+% Date			:20210525
+% sion		        :1
+% Usage			:octave> /path/Teorema_del_Valor_Intermedio_Actividad_1.8_Luis Gerardo Cardozo Carranza_3202
+% Notes			:Requiere aplicacion octave usar en consola preferentemente.
+
 %limpia la pantalla y las variables.
 clc, clear  
 
