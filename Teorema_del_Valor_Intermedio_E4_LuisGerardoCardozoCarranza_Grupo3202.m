@@ -66,5 +66,3 @@ title("Ejericicio 4: (3x^2-2x^2),[-2,0],C=1");
 
 %ajusta la grafica a los datos.
 axis tight
-
-
